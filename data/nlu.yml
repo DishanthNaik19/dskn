@@ -1,0 +1,230 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+
+  - intent: Goodbye
+    examples: |
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+      - thank you
+      - thank you very much
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+      - who are you
+
+  - intent: cold
+    examples: |
+      - I have a cough
+      - I have a cold
+      - i am dying from cold
+      - i am a fluing person with cold
+      - i am about to have cold |
+      - My nose is choked
+      - My chest is aching
+      - My nose is itching
+      - My throat is itching
+      - yes i am having cold and cough
+      - yes i am having cold
+      - yes i am having cough
+      - yes i am dying from cold
+      
+
+  - intent: med_not_helped
+    examples: |
+      - No, i am still not felling better after having benadryl.
+      - No, i am still not felling better after having crocin.
+      - i am not feeling better
+      - medicine did not helped me
+      - i am not feeling well
+
+  - intent: med_helped
+    examples: |
+      - medicine helped me
+      - i am feeling better now
+      - it was good medicine
+      - feeling good
+      - i am feeling better
+
+  - intent: not_well
+    examples: |
+      - I am not feeling well
+      - i feel sick
+      - i am sick
+      - i am not well
+      
+
+  - intent: well
+    examples: |
+      - i feel fine
+      - i am feeling fine
+      - i feel great
+      - i feel awesome
+
+  - intent: fever_sym
+    examples: |
+      - My body temperature has raised
+      - I am shivering
+      - I am feeling weak
+      - I have weakness in my body
+      - i am having fever
+      - fever
+
+  - intent: fracture_sym
+    examples: |
+      - my hand is aching
+      - my leg is aching
+      - i have pain in hand
+      - my hand is paining
+      - my joint is aching
+
+  - intent: fracture_details
+    examples: |
+      - it is a mild ache
+      - yes there is a swelling
+      - yes there is a physical deformity
+      - yes it is bleeding
+
+  - intent: fracture_accepted
+    examples: |
+      - yes
+      - yes i think it is fracture
+      - yes it is hurting
+      - it is bleeding
+      - blood is coming out
+
+  - intent: headache
+    examples: |
+      - i have a headache
+      - i am having pain in forehead
+      - i have head pain
+      - pain in head
+
+  - intent: migrane
+    examples: |
+      - i have a migrane headache
+      - migrane headache
+      - migrane
+
+  - intent: cluster_headache
+    examples: |
+      - i have a cluster headache
+      - cluster headache
+      - cluster
+
+  - intent: tension_headache
+    examples: |
+      - i have a tension headache
+      - tension headache
+      - tension
+
+  - intent: depression
+    examples: |
+      - i am feeling sad
+      - i am depressed
+      - i am feeling low
+      - i am lonely
+      - i am stuck in life
+
+  - intent: acne
+    examples: |
+     - i am facing acne
+     - i have pimples
+     - i have sever pain due to acne
+     - what to do when we get acne
+    
+
+  - intent: acidity
+    examples: |
+     - i have gastic problem
+     - stomach ache
+     - i have sever stomach problem
+     - my stomach is upset
+     - i can't burp
+     - i am not able to burp
+     - i have acidity
+
+
+  - intent: diabetes
+    examples: |
+     - i have diabetes what to do
+     - i feel like urinating continously
+     - swelling in legs with numbness 
+     - dizziness
+     - can i eat sweets while having diabetes
+
+  - intent: choking
+    examples: |
+     - i feel something is stuck in my throught
+     - i cannot swallow anything
+     - how to treat a person who is choking
+     - how to prevent choking
+
+  - intent: bleeding
+    examples: | 
+     - i cut my hands
+     - how to stop bleeding
+     - how to first aid bleeding
+
+
+  - intent: stopped heart
+    examples: |
+     - i can't hear heart beat 
+     - i can't feel the pulse
+     - i can't measure the blood pressure
+     - someone stopped breathing
+
+
+  - intent: animal bites
+    examples: |
+     - i got bit by a dog
+     - i got bit by a cat
+     - i got bit by a snake
+     - i got bit by a rat
+     - i got stung by a honey bee
+     - i got stung by a wasp
+
+
+  - intent: dizziness
+    examples: | 
+     - i feel dizzy
+     - someone fainted
+     - i feel tired
+     - my head is spinning
+     - everything looks blurry
+
+  - intent: eye irritation
+    examples: |
+     - my eyes are red
+     - my eyes are irritating
+     - my eyes are swollen
+     - my eyes are tearing continously
+     - my eyes hurt
+

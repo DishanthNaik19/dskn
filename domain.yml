@@ -1,0 +1,205 @@
+version: "3.1"
+
+intents:
+  - greet
+  - Goodbye
+  - bot_challenge
+  - cold
+  - med_not_helped
+  - med_helped
+  - not_well
+  - well
+  - fever_sym
+  - fracture_sym
+  - fracture_details
+  - fracture_accepted
+  - headache
+  - migrane
+  - cluster_headache
+  - tension_headache
+  - depression
+  - acne
+  - acidity
+  - diabetes
+  - choking
+  - bleeding
+  - stopped heart
+  - animal bites
+  - eye irritation
+  
+
+actions:
+  - action_new_sym
+  - utter_greet
+  - utter_Goodbye
+  - utter_iamabot
+  - utter_feedback
+  - utter_med_not_helped
+  - utter_med_helped
+  - utter_not_well
+  - utter_well
+  - utter_fever_med
+  - utter_fracture_sym
+  - utter_fracture_details
+  - utter_fracture_confirm
+  - utter_headache_type
+  - utter_migrane
+  - utter_tension_headache
+  - utter_cluster_headache
+  - utter_depression
+  - utter_acne
+  - utter_acidity
+  - utter_diabetes
+  - utter_choking
+  - utter_bleeding
+  - utter_stopped heart
+  - utter_animal bites
+  - utter_eye irritation
+ 
+
+responses:
+  utter_greet:
+    - text: "Hey! I am your medical assistant.How can i help you"
+  utter_Goodbye:
+    - text: "bye,hope i was helpful"
+
+  utter_iamabot:
+    - text: "I am your healthcare assistant powered by Rasa.Not a professional doctor"
+    
+  utter_cold:
+    - text: "ok let me help you
+    - Here are some home remedies to cure cold and cough:
+    - Chew 4-5 tulsi leaves the first thing in the morning. You can continue taking Tulsi leaves to boost your immunity
+    - Take a teaspoonful of honey before going to bed at night to reduce the severity of cough. Continue till you do not get relief from cough.
+    - Make your regular cup of black tea,Add a pinch of cinnamon powder to it,Drink it 2-3 times a day.
+
+    - Quick Tips to Keep Distance from Cold and Cough 
+    - Sanitize your hands with alcohol-based hand gels after touching contaminated surfaces.
+    - Keep a distance of 6 feet from people who are suffering from cold and cough.
+    - Wear a mask whenever you step outside the house or whenever you come in contact with outside people.
+    - Increase your water intake and have hot tea and liquids. 
+    - Strengthen your immune system by taking a balanced diet rich in vitamin C food.
+    - Indulge in some form of exercise or yoga to keep yourself active."
+
+  utter_feedback:
+    - text: "let me know if you are feeling better"
+
+  utter_med_not_helped:
+    - text: "Ok, you should consult a doctor."
+
+  utter_med_helped:
+    - text: "Ok, so better to carry on medicine for 2 more days.if you are not feeling better after 2 days , please consult a doctor"
+
+  utter_not_well:
+    - text: "Okay, can you tell me what's wrong? what are your symptoms?"
+
+  utter_well:
+    - text: "great to know. how can i assist you then?"
+
+  utter_fever_med:
+    - text: "This is a symptom of fever, you should take a tablet of crocin after you have your meal."
+
+  utter_fracture_sym:
+    - text: "okay, did you get hurt, or it is a sudden aching."
+
+  utter_fracture_details:
+    - text: "ok, is there a swelling or a physical deformity or bleeding at the aching region."
+
+  utter_fracture_confirm:
+    - text: "- okay, it is a common symptom of fracture, you should consult a doctor."
+
+  utter_headache_type:
+    - text: "what kind of headache do you have : 1. Migrane headache - intense throbbing pain on just one side of the head. 2. Cluster headaches - severe and recurrent headaches 3. Tension Headache - Ocassional"
+
+  utter_migrane:
+    - text: "symptom noted. Migraines tend to be recurrent, and each attack may last up to 3 days otherwise consult to doctor"
+
+  utter_cluster_headache:
+    - text: "symptom noted. Attacks tend to occur in daily clusters that can persist for weeks or months. They typically take place at the same time of day, which can often be a couple of hours after falling asleep at night. Better to consult to doctor"
+
+  utter_tension_headache:
+    - text: "symptom noted. The cause of tension headaches is unclear, but stress, anxiety, and depression are common triggers. If it happens regularly then consult to doctor"
+
+  utter_depression:
+    - text: "let's start with taking a deep breath,feeling better.here are some tips:
+    - Create a routine
+    - Set attainable goals
+    - Reward your efforts
+    - Do something you enjoy like listening to music, spending some time with nature, try doing yoga
+    - if the above suggestions does not work, please consult a therapist "
+
+  utter_acne:
+    - text: "The following remedies might be of help to you :
+    - 1. Apply apple cider vinegar
+    - 2. Make a honey and cinnamon mask
+    - 3. Apply green tea to your skin
+    - 4. Moisturize with aloe vera"
+
+  utter_acidity:
+   - text: "Here are some home remedies that can help lighten acidity or heartburn in mild condition only:
+   - 1. Baking soda: Mix half a teaspoon of baking soda in a glass of water and drink it. Baking soda acts as a natural antacid and can provide quick relief from acidity.
+   - 2. Ginger: Chew a small piece of fresh ginger or drink ginger tea. Ginger helps reduce inflammation in the stomach and can provide relief from acidity.
+   - 3. Apple cider vinegar: Mix one to two tablespoons of raw, unfiltered apple cider vinegar in a glass of water and drink it before meals. Despite its acidic nature, apple cider vinegar can help balance the pH levels in the stomach.
+   - 4. Fennel seeds: Chew a teaspoon of fennel seeds after meals. Fennel seeds can help neutralize stomach acid and aid digestion.
+   - 5. Cold milk: Drink a glass of cold milk to help neutralize stomach acid and provide relief from acidity.
+   - 6. Bananas: Eat a ripe banana to help coat the stomach lining and reduce acid reflux symptoms.
+   - 7. Probiotics: Consume probiotic-rich foods such as yogurt or take probiotic supplements. Probiotics promote a healthy gut and can help regulate stomach acid levels."
+
+  utter_diabetes:
+   - text: "Here are some remedies that can help you manage your diabetes:
+   - 1. Stress management: Deep breathing, walking, meditation, working out, pursuing a hobby, gardening, and listening to your favourite music might be helpful to destress. 
+   - 2. Eating right: eat foods that are rich in fibre, like whole grains, fruits, and vegetables etc. 
+   - 3. Exercise: lose weight if you are overweight, maintain a healthy weight, and control blood sugar levels as well. You can start exercising by taking frequent and short walks during the day. 
+   - 4. Onion: study on rats showed that a bioactive compound present in onion might have a blood glucose-lowering effect.
+   - 5. Neem: It might help increase glucose uptake by cells and deposition of glycogen (complex sugar-containing glucose) in rats."
+
+  utter_choking:
+   - text: "Here are the steps:
+   - 1. Stand behind the person and lean them slightly forward.
+   - 2. Put your arms around their waist.
+   - 3. Clench your fist and place it between their belly button (navel) and rib cage.
+   - 4. Grab your fist with your other hand.
+   - 5. Pull your clenched fist sharply backward and upward under the persons rib cage in five quick thrusts.
+   - 6. Repeat until the object is coughed up."
+
+
+  utter_bleeding:
+   - text: "Here are following steps to do:
+   - 1. Wash your hands or put on disposable gloves if you have them. This will protect you from infectious diseases like viral hepatitis and HIV/AIDS that can be spread in a person’s blood.6
+   - 2. Rinse the wound with water.
+   - 3. Cover the wound with a gauze or cloth (e.g., towel, blanket, clothing).
+   - 4. Apply direct pressure to stop the flow of blood and encourage clotting (when blood naturally thickens to stop blood loss).
+   - 5. Elevate the bleeding body part above the persons head if you can."
+
+  utter_stopped heart:
+   - text: "Here are few steps to follow:
+   - 1. Find a person nearby. Make eye contact, point to them, and say: Call 108.
+   - 2. Start doing chest compressions on the person who needs help. Using both your hands, push down hard and fast in the center of the person’s chest. Let their chest come back up naturally between compressions. You may hear pops or snaps; this is normal.
+   - 3. Keep going until someone with more training arrives.
+   - 4. If you are trained in CPR, you can use chest compressions and rescue breathing.
+   - 5. Do not remove the cloth if it becomes soaked. Removing the first layer will interfere with the clotting process and result in more blood loss. Instead, add more layers if needed.
+   - 6. Once bleeding has stopped, put a clean bandage on the wound."
+
+  utter_animal bites:
+   - text: "Here are steps to follow:
+   - 1. Stop the wound from bleeding by applying direct pressure with a clean, dry cloth.
+   - 2. Wash the wound. Use mild soap and warm, running water. Rinse the bite for 3 to 5 minutes.
+   - 3. Apply an antibacterial ointment to the wound. This may help reduce the risk for infection."
+
+  utter_eye irritation:
+   - text: "Here are few remedies:
+   - 1. Milk and Honey: Milk and honey may be used as a home remedy for sore eyes as the soothing properties of milk and the antibacterial qualities of honey work together to help treat the eyes. Itching, redness, and swelling are a few symptoms of sore eyes that milk and honey can help with because they are calming and anti-inflammatory.
+   - 2. Potato: Potatoes are rich in vitamins such as B6 and C meaning they may help to reduce inflammation to treat sore eyes and puffiness. It may also reduce dark circles under the eyes due to its calming effect.
+   - 3. Castor Oil: Castor oil is often used in eye drops to provide relief from eye irritation. It is a naturopathic method used to treat many different conditions including sore eyes.
+   - 4. Essential Oils:Essential oils should not be used or applied anywhere near the eye. Essential oils are commonly used in natural remedies due to their medicinal properties and are made by extracting the natural chemicals that come from certain plants such as lavender, rose and tea trees."
+  
+ 
+          
+
+  
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
